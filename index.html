@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body> 
 <head> 
 <title> NewsWorm </title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
 <style type="text/css">
 
 @font-face {
@@ -20,23 +19,23 @@ body{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	margin: 20px 20px 20px 20px;
-	padding:10px 10px 10px 10px;
+	
 }
 .big-box{
 	background-color: #bae5f0;
 	position: absolute;
 	font-family:  'bellMT';
+	margin: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 .image-box{
 	border: 5px solid rgb(0,0,0);
 	background-color: rgb(255,255,255);
-	margin: 5px 50px 5px 50px;
-	padding:10px 30px 10px 10px; 
-	width:300px;
+	width: 100%;
 	height:280px;
+	padding: 10px;
+	margin: 10px 0; 
 }
 {
     font-family: 'bell-mt-bold-58f26c3b71e4a', Georgia, serif;
@@ -53,7 +52,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 3px solid black;
+    border-top: 5px solid black;
     margin: 0px 0px;
     
 }
@@ -61,12 +60,21 @@ hr {
 
 	margin: -8px 0px;
 }
-#box{
-	width: 1080px;
+/*#box{
+	width: 100%;
+	height: 150px;
+	border: 5px solid rgb(0,0,0);
+}*/
+form.box{
+	width: 100%;
+	padding:20px;
+}
+form.box input[type='text']{
+	margin-top: 170px;
+	width: 100%;
 	height: 150px;
 	border: 5px solid rgb(0,0,0);
 }
-
 #image {
   position: absolute;
   height: 1600px;
@@ -95,78 +103,98 @@ hr {
 p{
 font-family:'bellMT' !important;
 
-font-size: 27.5px;
+font-size: 25px;
 text-align: left;
 }
-
+.header-box{
+	border-bottom: 4px solid #000;
+}
+.box-img{
+	height: 300px;
+	text-align: center;
+}
+.box-img img{
+	height: 100%;
+	width: auto;
+	text-align: center;
+}
+.inner-box{
+	padding: 20px;
+}
 </style>
 
-
+</head>
 <body>
 	<div class="big-box">
-		<div class="row" style="margin: 10px 5px 0px 70px">
-			<div class="col-xs-3 ">
-				<img src="Images/header1.png" align="center" width="170px" height="300px" ;>
+		<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="col-md-3 col-lg-3 box-img">
+				<img src="Images/header1.png">
 			</div>
-			<div class="col-xs-6 ">
-				<img src="Images/header2.png" align="center" width="600px" height="200px" ;">
+			<div class="col-md-6 col-lg-6 box-img">
+				<img src="Images/header2.png" style="width: 100% !important; height: auto !important;">
 			</div>
-			<div class="col-xs-3">
-				<img src="Images/header3.png" align="center" width="200px" height="300px";">
+			<div class="col-md-3 col-lg-3 box-img">
+				<img src="Images/header3.png">
 			</div>
+			
+		</div>
 		</div>
 		<hr>
 		<img class="horizontal" src="Images/horizontal.png" align="top" width="380px" ;">
 		<div class="row">
-			<div class="col-xs-3">
+		<div class="inner-box"> 
+			<div class="col-md-3 col-lg-3">
 			<div class="row">
+			
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left1.png" align="top" width=" 270px" height="180px" ;">
+     			<img src="Images/left1.png" align="top" width=" 100%" height="180px" ;">
      			<p style="font-size:30px; text-align: center;font-weight: bold;">Boron Found <br/>in Mars!</p> 
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left2.png" align="top" width=" 270px" height="180px" ;"> 
+     			<img src="Images/left2.png" align="top" width=" 100%" height="180px" ;"> 
      			<p style="font-size:30px; text-align: center;font-weight: bold;">India remembers Shakespeare</p>
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left3.png" align="top" width=" 270px" height="180px" ;"> 
+     			<img src="Images/left3.png" align="top" width=" 100%" height="180px" ;"> 
      			<p style="font-size:30px; text-align: center;font-weight: bold;">The painting of<br/> Tin Tin</p>
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left4.png" align="top" width=" 270px" height="180px" ;"> 
+     			<img src="Images/left4.png" align="top" width=" 100%" height="180px" ;"> 
      			<p style="font-size:30px; text-align: center;font-weight: bold;">Biggest dog in <br/>the world</p>
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left5.png" align="top" width=" 270px" height="180px" ;"> 
+     			<img src="Images/left5.png" align="top" width=" 100%" height="180px" ;"> 
      			<p style="font-size:30px; text-align: center;font-weight: bold;">The injured Superstar</p>
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left6.png" align="top" width=" 270px" height="150px" ;"> 
+     			<img src="Images/left6.png" align="top" width=" 100%" height="150px" ;"> 
      			<p style="font-size:30px; text-align: center;font-weight: bold;">The unbeatable Pankaj</p>
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-12 image-box">
-     			<img src="Images/left7.png" align="top" width=" 270px" height="150px";"> 
+     			<img src="Images/left7.png" align="top" width="100%" height="150px";"> 
      			<p style="font-size:30px; text-align: center;font-weight: bold;">The life saver dies</p>
      		
 			</div>
 			</div>
 			</div>
-			<div class="col-xs-9">
-				<div class="row" style="margin:5px 0px 0px 0px">
-			<div class="col-xs-11" >
-     			<img src="Images/middle.png" align="middle" width="950px" ;> 
+			<div class="col-md-9 col-lg-9">
+				<div class="row">
+				<div class="col-sm-12 col-lg-12">
+			<div class="col-md-11 col-sm-11" >
+     			<img src="Images/middle.png" align="middle" style="width: 100%" ;> 
      			<p style="font-size: 45px"><strong> Merriam-Webster' word of the year 2016 is 'Surreal'</strong></p>
      			<h2 style="font-weight: 900;">Date: 20/12/2016</h2>
      			<h2><strong>The news:</strong></h2>
@@ -186,23 +214,21 @@ text-align: left;
 
 
 			</div>
-			<div class="col-xs-1 vertical-text" >
+			<div class="col-xs-1 col-sm-1 vertical-text" >
 			<img id="image" src="Images/vertical.png"/>
 			<p id="text">Y<br/>o<br/>u<br/>n<br/>g<br/>f<br/>o<br/>r<br/>8<br/>-<br/> 1<br/>8<br/>Y<br/>e<br/>a<br/>r<br/>s<br/> <br/>y<br/>o<br/>u<br/>n<br/>g<br/></p> 
 			</div>
-			</div>
+			</div> </div>
 			<div class="row">
-			<div class="col-xs-12" style="margin:5px 5px 80px 50px">
-			<br/>
-		<br/><br/>
-		<br/><br/><br/><br/>
-			<form>
-			    <input type="text" id="box" name="text-box">
-			    	</form>
-			</div>
+				<div class="col-xs-12 col-lg-12">
+		
+					<form class="box">
+					    <input type="text" name="text-box">
+					</form>
+				</div>
 			</div>
 			
-		</div>
+		</div></div>
 
 	</div>
 
